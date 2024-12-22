@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        nav{
+            background-color: brown;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;            
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
+        #contenedor-header{
+            text-shadow: 3px 3px 3px black;
+            text-align: center;
+        }
+
+        header h1{
+            color: yellow;
+            font-size: 90px;
+        }
+
+        header h2{
+            color: white;
+            font-size: 40px;
+        }
+
+        header{
+            background-image: url(imagenes/planos.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -764px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        #servicios{
+            background-color: white;
+            height: 400px;
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 28px;
+            color: red;
+            padding-top: 30px;
+        }
+
+        #contenedor-servicios{
+            display: flex;
+            padding: 20px;
+        }
+
+        .caja{
+            width: 95%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #obras{
+            background-color: antiquewhite;
+        }
+
+        .obra{
+            width: 30%;
+            text-align: center;
+        }
+
+        .obra img{
+            width: 50%;
+        }
+
+        .obra p{
+            padding-bottom: 20px;
+        }
+
+        #contenedor-obras{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        footer{
+            background-color: grey;
+            color: white;
+            height: 200px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #contacte{
+            width: 100%;
+            border-bottom: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        hr{
+            color: white;
+            width: 80%;
+            margin: auto;
+        }
+
+        .caja-footer{
+            width: 33%;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#obras">Obras</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <header>
+        <div id="contenedor-header">
+            <h1>Ágora</h1>
+            <h2>Estudio de arquitectura</h2>
+        </div>
+    </header>
+
+    <section id="servicios">
+        <h1 class="titulo">Servicios</h1>
+        <div id="contenedor-servicios">
+            <div class="caja">
+                    <h1>1. Diseño de interiores</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos magni iure accusantium similique, repudiandae ipsam laboriosam ex fugiat totam blanditiis omnis? Excepturi, et libero recusandae fugiat ipsa natus in quae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui placeat assumenda in labore consequuntur quam obcaecati animi repellendus alias, similique ea distinctio, doloribus nemo ad hic dolore delectus dignissimos id!</p>
+                    <h1>2. Reformas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam officiis deserunt fuga commodi maxime! Magnam ut esse atque impedit error, ipsa itaque nam, accusantium mollitia deserunt dolorum expedita doloribus blanditiis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sunt reiciendis vero ratione eaque ut illum mollitia non, quasi molestiae accusantium id tempore at aliquam unde temporibus excepturi quibusdam quaerat?</p>
+            </div>
+            <div class="caja">
+                    <h1>3. Demoliciones</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat in praesentium ea, repellendus magni soluta! Quas perferendis placeat nisi ea totam aliquid beatae libero error impedit eveniet culpa, deleniti illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quas, debitis est quo ducimus quod esse suscipit adipisci eos odio nemo, cupiditate ut aliquid! Qui molestias voluptate nam voluptates ullam!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="obras">
+        <h1 class="titulo">Obras</h1>
+        <div id="contenedor-obras">
+            <div class="obra">
+                <img src="imagenes/casa.png" alt="casa">
+                <p>Sevilla</p>
+            </div>
+            <div class="obra">
+                <img src="imagenes/casa.png" alt="casa">
+                <p>Madrid</p>
+            </div>
+            <div class="obra">
+                <img src="imagenes/casa.png" alt="casa">
+                <p>Barcelona</p>
+            </div>
+            <div class="obra">
+                <img src="imagenes/casa.png" alt="casa">
+                <p>Asturias</p>
+            </div>
+            <div class="obra">
+                <img src="imagenes/casa.png" alt="casa">
+                <p>Cádiz</p>
+            </div>
+            <div class="obra">
+                <img src="imagenes/casa.png" alt="casa">
+                <p>Valencia</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div id="contacte">
+            Contacte con nosotros.
+            Trabajamos los 365 días del año
+        </div>
+
+        <div class="caja-footer">
+            <h3>Enlaces</h3>
+            <a href="http://facebook.com">Facebook</a>
+            <a href="http://twitter.com">Twitter</a>
+            <a href="http://instagram.com">Instagram</a>
+        </div>
+
+        <div class="caja-footer">
+            <h3>Estamos en</h3>
+            <p>Avda. Los Institutos s/n</p>
+            <p>13600 Alcázar de San Juan</p>
+        </div>
+
+        <div class="caja-footer">
+            <h3>Email</h3>
+            <p>info@agora.com</p>
+        </div>
+    </footer>
+</body>
+</html>
